@@ -13,8 +13,6 @@
   <title>Bester Malama | Data Analyst Portfolio</title>
 
   <style>
-    /* ===== GLOBAL STYLES ===== */
-
     :root {
       --navy: #0b1730;
       --navy-light: #142644;
@@ -53,7 +51,7 @@
       margin: auto;
     }
 
-    /* ===== NAVIGATION ===== */
+    /* NAVIGATION */
 
     header {
       background: var(--navy);
@@ -99,12 +97,23 @@
       color: var(--teal);
     }
 
-    /* ===== HERO ===== */
+    /* HERO WITH PROFILE PHOTO */
 
     .hero {
       background: linear-gradient(125deg,#09152b,#193c59);
       color: white;
-      padding: 105px 0;
+      padding: 95px 0;
+    }
+
+    .hero-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 280px;
+      align-items: center;
+      gap: 50px;
+    }
+
+    .hero-text {
+      min-width: 0;
     }
 
     .eyebrow {
@@ -132,6 +141,31 @@
       max-width: 720px;
       color: #d5e1ee;
       font-size: 17px;
+    }
+
+    /* NEW PROFILE PICTURE */
+
+    .profile-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .profile-photo {
+      display: block;
+      width: 260px;
+      height: 260px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center;
+      border: 5px solid var(--teal);
+      background: #233c55;
+      box-shadow: 0 12px 35px rgba(0,0,0,0.35);
+      transition: transform 0.3s;
+    }
+
+    .profile-photo:hover {
+      transform: scale(1.04);
     }
 
     .buttons {
@@ -163,7 +197,7 @@
       border: 1px solid #8ce6dd;
     }
 
-    /* ===== SECTIONS ===== */
+    /* SECTIONS */
 
     section {
       padding: 75px 0;
@@ -181,7 +215,7 @@
       max-width: 750px;
     }
 
-    /* ===== ABOUT ===== */
+    /* ABOUT */
 
     .about {
       background: white;
@@ -192,7 +226,7 @@
       font-size: 16px;
     }
 
-    /* ===== SKILLS ===== */
+    /* SKILLS */
 
     .skills-grid {
       display: grid;
@@ -219,7 +253,7 @@
       margin-top: 0;
     }
 
-    /* ===== PROJECTS ===== */
+    /* PROJECTS */
 
     .projects {
       background: #edf3f8;
@@ -337,7 +371,7 @@
       white-space: normal;
     }
 
-    /* ===== CONTACT ===== */
+    /* CONTACT */
 
     .contact {
       background: var(--navy);
@@ -389,7 +423,7 @@
       justify-content: center;
     }
 
-    /* ===== FOOTER ===== */
+    /* FOOTER */
 
     footer {
       background: #071123;
@@ -407,11 +441,27 @@
       color: #63e2d4;
     }
 
-    /* ===== RESPONSIVE ===== */
+    /* RESPONSIVE DESIGN */
+
+    @media(max-width:800px) {
+      .hero-layout {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .profile-container {
+        justify-content: center;
+      }
+
+      .profile-photo {
+        width: 210px;
+        height: 210px;
+      }
+    }
 
     @media(max-width:650px) {
       .hero {
-        padding: 70px 0;
+        padding: 65px 0;
       }
 
       section {
@@ -432,6 +482,19 @@
 
       .hero h2 {
         font-size: 19px;
+      }
+
+      .hero-layout {
+        text-align: center;
+      }
+
+      .hero .buttons {
+        justify-content: center;
+      }
+
+      .profile-photo {
+        width: 185px;
+        height: 185px;
       }
 
       .contact-details {
@@ -462,49 +525,63 @@
 
   <main>
 
-    <!-- HERO SECTION -->
+    <!-- HERO SECTION WITH PROFILE PHOTO -->
     <div class="hero" id="home">
-      <div class="container">
+      <div class="container hero-layout">
 
-        <div class="eyebrow">
-          Welcome to my data analytics portfolio
+        <div class="hero-text">
+
+          <div class="eyebrow">
+            Welcome to my data analytics portfolio
+          </div>
+
+          <h1>Bester Malama</h1>
+
+          <h2>
+            Aspiring Data Analyst | Business Intelligence
+          </h2>
+
+          <p>
+            Transforming raw data into meaningful business insights
+            using Microsoft Excel, SQL, Power BI and Python.
+          </p>
+
+          <p>
+            Explore my data analytics projects demonstrating
+            data cleaning, exploratory analysis, business
+            intelligence, KPI reporting and visualization.
+          </p>
+
+          <div class="buttons">
+
+            <a class="btn" href="#projects">
+              Explore My Projects
+            </a>
+
+            <a class="btn btn-outline"
+               href="https://github.com/bestermalam"
+               target="_blank"
+               rel="noopener noreferrer">
+              View GitHub
+            </a>
+
+            <a class="btn btn-outline" href="#contact">
+              Contact Me
+            </a>
+
+          </div>
         </div>
 
-        <h1>Bester Malama</h1>
-
-        <h2>
-          Aspiring Data Analyst | Business Intelligence
-        </h2>
-
-        <p>
-          Transforming raw data into meaningful business insights
-          using Microsoft Excel, SQL, Power BI and Python.
-        </p>
-
-        <p>
-          Explore my data analytics projects demonstrating
-          data cleaning, exploratory analysis, business
-          intelligence, KPI reporting and visualization.
-        </p>
-
-        <div class="buttons">
-
-          <a class="btn" href="#projects">
-            Explore My Projects
-          </a>
-
-          <a class="btn btn-outline"
-             href="https://github.com/bestermalam"
-             target="_blank"
-             rel="noopener noreferrer">
-            View GitHub
-          </a>
-
-          <a class="btn btn-outline" href="#contact">
-            Contact Me
-          </a>
-
+        <!-- PROFILE PHOTO ON THE RIGHT -->
+        <div class="profile-container">
+          <img
+            src="profile.jpg"
+            alt="Profile photo of Bester Malama"
+            class="profile-photo"
+            width="260"
+            height="260">
         </div>
+
       </div>
     </div>
 
