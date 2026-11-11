@@ -3,16 +3,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
 
   <meta name="description"
-        content="Bester Malama - Data Analyst Portfolio featuring Excel, SQL, Power BI and Python projects.">
+        content="Bester Malama Data Analyst Portfolio featuring Excel, SQL, Power BI and Python projects.">
 
   <meta name="theme-color" content="#0b1730">
 
   <title>Bester Malama | Data Analyst Portfolio</title>
 
   <style>
+    /* ===== GLOBAL ===== */
+
     :root {
       --navy: #0b1730;
       --navy-light: #142644;
@@ -51,7 +54,7 @@
       margin: auto;
     }
 
-    /* NAVIGATION */
+    /* ===== NAVIGATION ===== */
 
     header {
       background: var(--navy);
@@ -97,19 +100,19 @@
       color: var(--teal);
     }
 
-    /* HERO WITH PROFILE PHOTO */
+    /* ===== HERO ===== */
 
     .hero {
       background: linear-gradient(125deg,#09152b,#193c59);
       color: white;
-      padding: 95px 0;
+      padding: 85px 0;
     }
 
     .hero-layout {
       display: grid;
-      grid-template-columns: minmax(0, 1fr) 280px;
+      grid-template-columns: minmax(0,1fr) 320px;
       align-items: center;
-      gap: 50px;
+      gap: 45px;
     }
 
     .hero-text {
@@ -143,30 +146,41 @@
       font-size: 17px;
     }
 
-    /* NEW PROFILE PICTURE */
+    /* ===== PROFILE PHOTO BOX ===== */
 
     .profile-container {
       display: flex;
-      align-items: center;
       justify-content: center;
+      align-items: center;
+      width: 100%;
     }
 
     .profile-photo {
       display: block;
-      width: 260px;
-      height: 260px;
-      border-radius: 50%;
-      object-fit: cover;
+
+      width: 300px;
+      height: 370px;
+      max-width: 100%;
+
+      object-fit: contain;
       object-position: center;
-      border: 5px solid var(--teal);
-      background: #233c55;
-      box-shadow: 0 12px 35px rgba(0,0,0,0.35);
-      transition: transform 0.3s;
+
+      background: #193c59;
+
+      border: 4px solid var(--teal);
+      border-radius: 18px;
+
+      box-shadow: 0 12px 35px
+                  rgba(0,0,0,0.35);
+
+      transition: transform 0.3s ease;
     }
 
     .profile-photo:hover {
-      transform: scale(1.04);
+      transform: scale(1.03);
     }
+
+    /* ===== BUTTONS ===== */
 
     .buttons {
       display: flex;
@@ -197,7 +211,7 @@
       border: 1px solid #8ce6dd;
     }
 
-    /* SECTIONS */
+    /* ===== SECTIONS ===== */
 
     section {
       padding: 75px 0;
@@ -215,7 +229,7 @@
       max-width: 750px;
     }
 
-    /* ABOUT */
+    /* ===== ABOUT ===== */
 
     .about {
       background: white;
@@ -226,7 +240,7 @@
       font-size: 16px;
     }
 
-    /* SKILLS */
+    /* ===== SKILLS ===== */
 
     .skills-grid {
       display: grid;
@@ -253,7 +267,7 @@
       margin-top: 0;
     }
 
-    /* PROJECTS */
+    /* ===== PROJECTS ===== */
 
     .projects {
       background: #edf3f8;
@@ -368,10 +382,9 @@
       font-size: 13px;
       line-height: 1.8;
       color: #7de6d6;
-      white-space: normal;
     }
 
-    /* CONTACT */
+    /* ===== CONTACT ===== */
 
     .contact {
       background: var(--navy);
@@ -423,7 +436,7 @@
       justify-content: center;
     }
 
-    /* FOOTER */
+    /* ===== FOOTER ===== */
 
     footer {
       background: #071123;
@@ -441,12 +454,12 @@
       color: #63e2d4;
     }
 
-    /* RESPONSIVE DESIGN */
+    /* ===== MOBILE RESPONSIVE ===== */
 
-    @media(max-width:800px) {
+    @media(max-width:850px) {
       .hero-layout {
         grid-template-columns: 1fr;
-        gap: 30px;
+        gap: 35px;
       }
 
       .profile-container {
@@ -454,14 +467,31 @@
       }
 
       .profile-photo {
-        width: 210px;
-        height: 210px;
+        width: 280px;
+        height: 345px;
       }
     }
 
     @media(max-width:650px) {
       .hero {
-        padding: 65px 0;
+        padding: 60px 0;
+      }
+
+      .hero-layout {
+        text-align: center;
+      }
+
+      .hero .buttons {
+        justify-content: center;
+      }
+
+      .hero h2 {
+        font-size: 19px;
+      }
+
+      .profile-photo {
+        width: 260px;
+        height: 320px;
       }
 
       section {
@@ -480,23 +510,6 @@
         gap: 12px;
       }
 
-      .hero h2 {
-        font-size: 19px;
-      }
-
-      .hero-layout {
-        text-align: center;
-      }
-
-      .hero .buttons {
-        justify-content: center;
-      }
-
-      .profile-photo {
-        width: 185px;
-        height: 185px;
-      }
-
       .contact-details {
         grid-template-columns: 1fr;
       }
@@ -509,6 +522,7 @@
   <!-- NAVIGATION -->
   <header>
     <nav class="container">
+
       <a class="logo" href="#home">
         Bester<span>Malama.</span>
       </a>
@@ -520,15 +534,17 @@
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </div>
+
     </nav>
   </header>
 
   <main>
 
-    <!-- HERO SECTION WITH PROFILE PHOTO -->
+    <!-- HERO SECTION -->
     <div class="hero" id="home">
       <div class="container hero-layout">
 
+        <!-- LEFT: INTRODUCTION -->
         <div class="hero-text">
 
           <div class="eyebrow">
@@ -542,14 +558,16 @@
           </h2>
 
           <p>
-            Transforming raw data into meaningful business insights
-            using Microsoft Excel, SQL, Power BI and Python.
+            Transforming raw data into meaningful
+            business insights using Microsoft Excel,
+            SQL, Power BI and Python.
           </p>
 
           <p>
-            Explore my data analytics projects demonstrating
-            data cleaning, exploratory analysis, business
-            intelligence, KPI reporting and visualization.
+            Explore my data analytics projects
+            demonstrating data cleaning, exploratory
+            analysis, business intelligence,
+            KPI reporting and visualization.
           </p>
 
           <div class="buttons">
@@ -572,42 +590,45 @@
           </div>
         </div>
 
-        <!-- PROFILE PHOTO ON THE RIGHT -->
+        <!-- RIGHT: LARGE PROFILE PICTURE -->
         <div class="profile-container">
+
           <img
             src="profile.jpg"
-            alt="Profile photo of Bester Malama"
+            alt="Bester Malama Profile Picture"
             class="profile-photo"
-            width="260"
-            height="260">
+            width="300"
+            height="370">
+
         </div>
 
       </div>
     </div>
 
-    <!-- ABOUT SECTION -->
+    <!-- ABOUT ME -->
     <section class="about" id="about">
       <div class="container">
 
         <h2 class="section-title">About Me</h2>
 
         <p>
-          I am Bester Malama, an aspiring Data Analyst with
-          a background in Information Systems and practical
-          experience in data cleaning, analysis, reporting
-          and visualization.
+          I am Bester Malama, an aspiring Data Analyst
+          with a background in Information Systems
+          and practical experience in data cleaning,
+          analysis, reporting and visualization.
         </p>
 
         <p>
-          I use Excel, SQL, Power BI and Python to
-          transform raw datasets into meaningful
+          I use Excel, SQL, Power BI and Python
+          to transform raw datasets into meaningful
           business insights.
         </p>
 
         <p>
-          My interests include Data Analytics, Data Mining,
-          Business Intelligence, statistical reporting,
-          and evidence-based business decision-making.
+          My interests include Data Analytics,
+          Data Mining, Business Intelligence,
+          statistical reporting and evidence-based
+          business decision-making.
         </p>
 
         <p>
@@ -636,8 +657,9 @@
             <h3>Microsoft Excel</h3>
             <p>
               Data cleaning, formulas, Excel Tables,
-              PivotTables, PivotCharts, slicers,
-              KPI calculations and interactive dashboards.
+              PivotTables, PivotCharts, sorting,
+              filtering, slicers, KPI calculations
+              and interactive dashboards.
             </p>
           </div>
 
@@ -679,10 +701,12 @@
         <h2 class="section-title">Featured Projects</h2>
 
         <p class="section-subtitle">
-          Four practical data analysis projects using
-          Microsoft Excel, SQL, Power BI and Python.
-          Each project has its own dataset, findings,
-          documentation and GitHub repository.
+          Four practical data analysis projects
+          using Microsoft Excel, SQL, Power BI
+          and Python.
+          Each project has its own dataset,
+          findings, documentation and
+          GitHub repository.
         </p>
 
         <div class="projects-grid">
@@ -704,10 +728,12 @@
               <h3>Excel Sales Performance Dashboard</h3>
 
               <p>
-                Developed an interactive Excel dashboard to
-                analyze business revenue, transactions,
-                product performance, sales by city
-                and salesperson contributions.
+                Developed an interactive Excel
+                dashboard to analyze business
+                revenue, transactions,
+                product performance,
+                sales by city and
+                salesperson contributions.
               </p>
 
               <h4>Project Objectives</h4>
@@ -715,7 +741,7 @@
               <ul class="insights">
                 <li>Calculate sales revenue and transactions.</li>
                 <li>Identify top-performing products.</li>
-                <li>Compare sales performance across cities.</li>
+                <li>Compare sales across cities.</li>
                 <li>Analyze salesperson performance.</li>
                 <li>Build an interactive dashboard.</li>
               </ul>
@@ -785,10 +811,11 @@
               <h3>SQL Sales Data Analysis</h3>
 
               <p>
-                Analyzed fictional Zambian retail sales data
-                using MySQL to investigate revenue,
-                product performance, customer purchases
-                and sales across cities.
+                Analyzed fictional Zambian retail
+                sales data using MySQL to investigate
+                revenue, product performance,
+                customer purchases and
+                sales across cities.
               </p>
 
               <h4>Project Objectives</h4>
@@ -870,9 +897,10 @@
               <h3>Power BI Business Performance Dashboard</h3>
 
               <p>
-                Developed an interactive Power BI dashboard
-                to monitor business sales revenue, product
-                performance, quantities sold and city-level
+                Developed an interactive Power BI
+                dashboard to monitor business sales
+                revenue, product performance,
+                quantities sold and city-level
                 business results.
               </p>
 
@@ -955,10 +983,11 @@
               <h3>Python Sales Data Analysis</h3>
 
               <p>
-                Used Python, Pandas and Matplotlib in
-                Google Colab to clean, explore and visualize
-                sales data containing 20 valid transactions
-                from September 2026.
+                Used Python, Pandas and Matplotlib
+                in Google Colab to clean, explore
+                and visualize sales data containing
+                20 valid transactions from
+                September 2026.
               </p>
 
               <h4>Project Objectives</h4>
@@ -1042,9 +1071,9 @@
         </p>
 
         <p>
-          Feel free to contact me regarding internships,
-          projects, collaborations and professional
-          opportunities.
+          Feel free to contact me regarding
+          internships, projects, collaborations
+          and professional opportunities.
         </p>
 
         <div class="contact-details">
