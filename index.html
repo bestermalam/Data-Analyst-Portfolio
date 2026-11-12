@@ -6,15 +6,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <meta name="description"
-content="Bester Malama - Data Analyst Portfolio featuring Excel, SQL, Power BI, Python, Education, Projects and CV.">
+content="Bester Malama - Data Analyst Portfolio featuring Excel, SQL, Power BI and Python projects.">
+
+<meta name="theme-color" content="#0b1730">
 
 <title>Bester Malama | Data Analyst Portfolio</title>
 
 <style>
 
-/* ============================
-   GLOBAL STYLING
-============================ */
+/* ===== GLOBAL ===== */
 
 :root {
   --navy: #0b1730;
@@ -54,9 +54,7 @@ a {
   margin: auto;
 }
 
-/* ============================
-   NAVIGATION
-============================ */
+/* ===== NAVIGATION ===== */
 
 header {
   background: var(--navy);
@@ -95,23 +93,16 @@ nav {
 .nav-links a {
   color: white;
   font-size: 14px;
-  transition: color 0.2s;
 }
 
 .nav-links a:hover {
   color: var(--teal);
 }
 
-/* ============================
-   HERO SECTION
-============================ */
+/* ===== HERO SECTION ===== */
 
 .hero {
-  background: linear-gradient(
-    125deg,
-    #09152b,
-    #193c59
-  );
+  background: linear-gradient(125deg,#09152b,#193c59);
   color: white;
   padding: 85px 0;
 }
@@ -153,9 +144,7 @@ nav {
   max-width: 720px;
 }
 
-/* ============================
-   PROFILE PICTURE
-============================ */
+/* ===== PROFILE PHOTO ===== */
 
 .profile-container {
   display: flex;
@@ -175,16 +164,14 @@ nav {
   border: 4px solid var(--teal);
   border-radius: 18px;
   box-shadow: 0 12px 35px rgba(0,0,0,0.35);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s;
 }
 
 .profile-photo:hover {
   transform: scale(1.03);
 }
 
-/* ============================
-   BUTTONS
-============================ */
+/* ===== BUTTONS ===== */
 
 .buttons {
   display: flex;
@@ -216,9 +203,7 @@ nav {
   border: 1px solid #8ce6dd;
 }
 
-/* ============================
-   COMMON SECTIONS
-============================ */
+/* ===== SECTIONS ===== */
 
 section {
   padding: 75px 0;
@@ -236,9 +221,7 @@ section {
   margin-bottom: 35px;
 }
 
-/* ============================
-   ABOUT
-============================ */
+/* ===== ABOUT ===== */
 
 .about {
   background: white;
@@ -249,9 +232,7 @@ section {
   font-size: 16px;
 }
 
-/* ============================
-   EDUCATION
-============================ */
+/* ===== EDUCATION ===== */
 
 .education {
   background: #edf3f8;
@@ -277,9 +258,7 @@ section {
   margin: 0 0 12px;
 }
 
-/* ============================
-   SKILLS
-============================ */
+/* ===== SKILLS ===== */
 
 .skills-grid {
   display: grid;
@@ -306,9 +285,7 @@ section {
   margin-top: 0;
 }
 
-/* ============================
-   PROJECTS
-============================ */
+/* ===== PROJECTS ===== */
 
 .projects {
   background: #edf3f8;
@@ -425,9 +402,7 @@ section {
   color: #7de6d6;
 }
 
-/* ============================
-   CV SECTION
-============================ */
+/* ===== CV SECTION ===== */
 
 .cv-section {
   background: white;
@@ -456,9 +431,7 @@ section {
   justify-content: center;
 }
 
-/* ============================
-   CONTACT
-============================ */
+/* ===== CONTACT ===== */
 
 .contact {
   background: var(--navy);
@@ -510,9 +483,7 @@ section {
   justify-content: center;
 }
 
-/* ============================
-   FOOTER
-============================ */
+/* ===== FOOTER ===== */
 
 footer {
   background: #071123;
@@ -530,12 +501,9 @@ footer a {
   color: #63e2d4;
 }
 
-/* ============================
-   MOBILE RESPONSIVENESS
-============================ */
+/* ===== RESPONSIVE ===== */
 
 @media(max-width:850px) {
-
   .hero-layout {
     grid-template-columns: 1fr;
     gap: 35px;
@@ -545,11 +513,9 @@ footer a {
     width: 280px;
     height: 345px;
   }
-
 }
 
 @media(max-width:650px) {
-
   .hero {
     padding: 60px 0;
   }
@@ -594,7 +560,6 @@ footer a {
   .cv-box {
     padding: 24px;
   }
-
 }
 
 </style>
@@ -602,12 +567,9 @@ footer a {
 
 <body>
 
-<!-- ============================
-     NAVIGATION
-============================ -->
+<!-- ===== NAVIGATION ===== -->
 
 <header>
-
 <nav class="container">
 
   <a class="logo" href="#home">
@@ -615,35 +577,23 @@ footer a {
   </a>
 
   <div class="nav-links">
-
     <a href="#home">Home</a>
-
     <a href="#about">About</a>
-
     <a href="#education">Education</a>
-
     <a href="#skills">Skills</a>
-
     <a href="#projects">Projects</a>
-
     <a href="#cv">My CV</a>
-
     <a href="#contact">Contact</a>
-
   </div>
 
 </nav>
-
 </header>
 
 <main>
 
-<!-- ============================
-     HERO / HOME
-============================ -->
+<!-- ===== HOME ===== -->
 
 <div class="hero" id="home">
-
 <div class="container hero-layout">
 
   <div class="hero-text">
@@ -660,9 +610,9 @@ footer a {
     </h2>
 
     <p>
-      Information Systems graduate candidate
-      with practical skills in Microsoft Excel,
-      SQL, Power BI and Python.
+      Information Systems graduate candidate with
+      practical skills in Microsoft Excel, SQL,
+      Power BI and Python.
     </p>
 
     <p>
@@ -672,9 +622,8 @@ footer a {
     </p>
 
     <p>
-      Explore my data analytics projects
-      showcasing my technical skills
-      and analytical experience.
+      Explore my data analytics projects showcasing
+      my technical skills and analytical experience.
     </p>
 
     <div class="buttons">
@@ -683,8 +632,9 @@ footer a {
         Explore My Projects
       </a>
 
+      <!-- CORRECTED CV LINK -->
       <a class="btn btn-outline"
-         href="Bester_Malama_CV.pdf"
+         href="Bester_Malama_CV%20.pdf"
          download="Bester_Malama_CV.pdf">
         Download My CV
       </a>
@@ -702,817 +652,720 @@ footer a {
       </a>
 
     </div>
-
   </div>
 
-  <!-- PROFILE PHOTO -->
-
   <div class="profile-container">
-
     <img
       src="profile.jpg"
       alt="Bester Malama Profile Picture"
       class="profile-photo"
       width="300"
       height="370">
-
   </div>
 
 </div>
-
 </div>
 
-<!-- ============================
-     ABOUT ME
-============================ -->
+<!-- ===== ABOUT ===== -->
 
 <section class="about" id="about">
-
 <div class="container">
 
-<h2 class="section-title">
-  About Me
-</h2>
+  <h2 class="section-title">About Me</h2>
 
-<p>
-  I am Bester Malama, an aspiring Data Analyst
-  and Information Systems graduate candidate
-  with practical experience in data cleaning,
-  analysis, reporting and visualization.
-</p>
+  <p>
+    I am Bester Malama, an aspiring Data Analyst
+    and Information Systems graduate candidate
+    with practical experience in data cleaning,
+    analysis, reporting and visualization.
+  </p>
 
-<p>
-  I use Microsoft Excel, SQL, Power BI
-  and Python to transform raw datasets
-  into meaningful business insights.
-</p>
+  <p>
+    I use Microsoft Excel, SQL, Power BI and Python
+    to transform raw datasets into meaningful
+    business insights.
+  </p>
 
-<p>
-  My interests include Data Analytics,
-  Data Mining, Business Intelligence,
-  conservation data, field reporting,
-  statistical analysis and evidence-based
-  business decision-making.
-</p>
+  <p>
+    My interests include Data Analytics, Data Mining,
+    Business Intelligence, conservation data,
+    field reporting, statistical analysis and
+    evidence-based business decision-making.
+  </p>
 
-<p>
-  I am seeking opportunities to apply
-  my analytical and technical skills
-  in real-world organizations.
-</p>
+  <p>
+    I am seeking opportunities to apply my
+    analytical and technical skills in
+    real-world organizations.
+  </p>
 
 </div>
-
 </section>
 
-<!-- ============================
-     EDUCATION
-============================ -->
+<!-- ===== EDUCATION ===== -->
 
 <section class="education" id="education">
-
 <div class="container">
 
-<h2 class="section-title">
-  Education
-</h2>
+  <h2 class="section-title">Education</h2>
 
-<p class="section-subtitle">
-  My academic background and qualifications.
-</p>
-
-<div class="education-card">
-
-  <h3>
-    Bachelor of Science in Information Systems
-  </h3>
-
-  <h4>
-    National Institute of Public Administration
-    (NIPA), Lusaka
-  </h4>
-
-  <p>
-    All academic requirements completed.
+  <p class="section-subtitle">
+    My academic background and qualifications.
   </p>
 
-  <p>
-    Graduation scheduled for November 2026.
-  </p>
+  <div class="education-card">
+
+    <h3>
+      Bachelor of Science in Information Systems
+    </h3>
+
+    <h4>
+      National Institute of Public Administration
+      (NIPA), Lusaka
+    </h4>
+
+    <p>All academic requirements completed.</p>
+
+    <p>
+      Graduation scheduled for November 2026.
+    </p>
+
+  </div>
+
+  <div class="education-card">
+
+    <h3>Secondary Education</h3>
+
+    <h4>Mukinge Girls Secondary School</h4>
+
+    <p>2014 – 2017</p>
+
+  </div>
 
 </div>
-
-<div class="education-card">
-
-  <h3>
-    Secondary Education
-  </h3>
-
-  <h4>
-    Mukinge Girls Secondary School
-  </h4>
-
-  <p>
-    2014 – 2017
-  </p>
-
-</div>
-
-</div>
-
 </section>
 
-<!-- ============================
-     TECHNICAL SKILLS
-============================ -->
+<!-- ===== SKILLS ===== -->
 
 <section id="skills">
-
 <div class="container">
 
-<h2 class="section-title">
-  Technical Skills
-</h2>
+  <h2 class="section-title">
+    Technical Skills
+  </h2>
 
-<p class="section-subtitle">
-  Tools and analytical methods demonstrated
-  through my portfolio projects.
-</p>
+  <p class="section-subtitle">
+    Tools and analytical methods demonstrated
+    through my portfolio projects.
+  </p>
 
-<div class="skills-grid">
+  <div class="skills-grid">
 
-  <div class="skill-card">
+    <div class="skill-card">
+      <h3>Microsoft Excel</h3>
+      <p>
+        Data cleaning, sorting, filtering,
+        Excel formulas, Excel Tables,
+        PivotTables, PivotCharts,
+        interactive slicers, KPI calculations
+        and dashboards.
+      </p>
+    </div>
 
-    <h3>Microsoft Excel</h3>
+    <div class="skill-card">
+      <h3>SQL / MySQL</h3>
+      <p>
+        SELECT, WHERE, ORDER BY, GROUP BY,
+        HAVING, INNER JOIN, subqueries,
+        SUM, COUNT, AVG and relational
+        database analysis.
+      </p>
+    </div>
 
-    <p>
-      Data cleaning, sorting, filtering,
-      Excel formulas, Excel Tables,
-      PivotTables, PivotCharts,
-      interactive slicers, KPI calculations
-      and dashboards.
-    </p>
+    <div class="skill-card">
+      <h3>Microsoft Power BI</h3>
+      <p>
+        Data visualization, DAX calculations,
+        KPI cards, interactive slicers,
+        dashboards, data modeling
+        and business reporting.
+      </p>
+    </div>
 
-  </div>
+    <div class="skill-card">
+      <h3>Python</h3>
+      <p>
+        Python programming, Pandas,
+        Matplotlib, Google Colab, CSV analysis,
+        data cleaning and exploratory analysis.
+      </p>
+    </div>
 
-  <div class="skill-card">
+    <div class="skill-card">
+      <h3>Data Analysis</h3>
+      <p>
+        Data preparation, statistical calculations,
+        business reporting, trend identification,
+        data visualization and KPI reporting.
+      </p>
+    </div>
 
-    <h3>SQL / MySQL</h3>
-
-    <p>
-      SELECT, WHERE, ORDER BY,
-      GROUP BY, HAVING, INNER JOIN,
-      subqueries, SUM, COUNT, AVG
-      and relational database analysis.
-    </p>
-
-  </div>
-
-  <div class="skill-card">
-
-    <h3>Microsoft Power BI</h3>
-
-    <p>
-      Data visualization,
-      DAX calculations,
-      KPI cards, interactive slicers,
-      dashboards, data modeling
-      and business reporting.
-    </p>
-
-  </div>
-
-  <div class="skill-card">
-
-    <h3>Python</h3>
-
-    <p>
-      Python programming,
-      Pandas, Matplotlib,
-      Google Colab, CSV analysis,
-      data cleaning and exploratory
-      data analysis.
-    </p>
-
-  </div>
-
-  <div class="skill-card">
-
-    <h3>Data Analysis</h3>
-
-    <p>
-      Data preparation, statistical
-      calculations, business reporting,
-      trend identification,
-      visualization and KPI reporting.
-    </p>
-
-  </div>
-
-  <div class="skill-card">
-
-    <h3>Git & GitHub</h3>
-
-    <p>
-      Version control,
-      project documentation,
-      code repositories,
-      sharing technical projects
-      and portfolio management.
-    </p>
+    <div class="skill-card">
+      <h3>Git & GitHub</h3>
+      <p>
+        Version control, project documentation,
+        code repositories, technical projects
+        and portfolio management.
+      </p>
+    </div>
 
   </div>
 
 </div>
-
-</div>
-
 </section>
 
-<!-- ============================
-     FEATURED PROJECTS
-============================ -->
+<!-- ===== FEATURED PROJECTS ===== -->
 
 <section class="projects" id="projects">
-
 <div class="container">
 
-<h2 class="section-title">
-  Featured Projects
-</h2>
-
-<p class="section-subtitle">
-  Four practical data analysis projects
-  using Microsoft Excel, SQL,
-  Power BI and Python.
-</p>
-
-<div class="projects-grid">
-
-<!-- ============================
-     PROJECT 1 EXCEL
-============================ -->
-
-<article class="project-card">
-
-<img
-  src="https://raw.githubusercontent.com/bestermalam/Excel-Sales-Performance-Dashboard/main/Sales_Dashboard/Sales_Dashboard_Performances.png"
-  alt="Excel Sales Performance Dashboard"
-  loading="lazy">
-
-<div class="project-content">
-
-<span class="tag">Excel</span>
-<span class="tag">PivotTables</span>
-<span class="tag">Dashboard</span>
-
-<h3>
-  Excel Sales Performance Dashboard
-</h3>
-
-<p>
-  Developed an interactive Excel dashboard
-  to analyze sales revenue, transactions,
-  product performance and salesperson
-  contributions.
-</p>
-
-<h4>Project Objectives</h4>
-
-<ul class="insights">
-  <li>Calculate total business revenue.</li>
-  <li>Identify top-performing products.</li>
-  <li>Compare sales across cities.</li>
-  <li>Analyze salesperson performance.</li>
-  <li>Build an interactive dashboard.</li>
-</ul>
-
-<div class="metrics">
-
-<div class="metric">
-  <strong>K120,560</strong>
-  <small>Total Revenue</small>
-</div>
-
-<div class="metric">
-  <strong>20</strong>
-  <small>Transactions</small>
-</div>
-
-<div class="metric">
-  <strong>86</strong>
-  <small>Units Sold</small>
-</div>
-
-<div class="metric">
-  <strong>K6,028</strong>
-  <small>Average Sale</small>
-</div>
-
-</div>
-
-<h4>Tools and Methods</h4>
-
-<ul class="insights">
-  <li>Microsoft Excel</li>
-  <li>SUM, AVERAGE, COUNT and COUNTA</li>
-  <li>PivotTables and PivotCharts</li>
-  <li>Sorting and Filtering</li>
-  <li>Interactive Slicers</li>
-  <li>KPI Reporting</li>
-</ul>
-
-<a class="btn"
-   href="https://github.com/bestermalam/Excel-Sales-Performance-Dashboard"
-   target="_blank"
-   rel="noopener noreferrer">
-   View Excel Project
-</a>
-
-</div>
-
-</article>
-
-<!-- ============================
-     PROJECT 2 SQL
-============================ -->
-
-<article class="project-card">
-
-<div class="sql-preview">
-
-<strong>SQL Analysis</strong>
-
-<code>
-SELECT product, SUM(revenue)<br>
-FROM sales<br>
-GROUP BY product;
-</code>
-
-</div>
-
-<div class="project-content">
-
-<span class="tag">SQL</span>
-<span class="tag">MySQL</span>
-<span class="tag">Data Analysis</span>
-
-<h3>
-  SQL Sales Data Analysis
-</h3>
-
-<p>
-  Analyzed fictional Zambian retail sales
-  data using MySQL to investigate revenue,
-  product performance, customer purchases
-  and sales across cities.
-</p>
-
-<h4>Project Objectives</h4>
-
-<ul class="insights">
-  <li>Calculate business revenue using SQL.</li>
-  <li>Identify top-selling products.</li>
-  <li>Compare revenue across cities.</li>
-  <li>Find highest-spending customers.</li>
-  <li>Calculate average transaction value.</li>
-</ul>
-
-<div class="metrics">
-
-<div class="metric">
-  <strong>K65,700</strong>
-  <small>Total Revenue</small>
-</div>
-
-<div class="metric">
-  <strong>10</strong>
-  <small>Transactions</small>
-</div>
-
-<div class="metric">
-  <strong>K25,500</strong>
-  <small>Laptop Revenue</small>
-</div>
-
-<div class="metric">
-  <strong>K30,300</strong>
-  <small>Lusaka Revenue</small>
-</div>
-
-</div>
-
-<h4>SQL Techniques</h4>
-
-<ul class="insights">
-  <li>SELECT and WHERE</li>
-  <li>ORDER BY and GROUP BY</li>
-  <li>HAVING and INNER JOIN</li>
-  <li>SUM, COUNT, AVG, MIN and MAX</li>
-  <li>Subqueries</li>
-</ul>
-
-<h4>Business Findings</h4>
-
-<ul class="insights">
-  <li>Laptop generated the highest revenue.</li>
-  <li>Lusaka was the highest-revenue city.</li>
-  <li>John Banda was the top-spending customer.</li>
-</ul>
-
-<a class="btn"
-   href="https://github.com/bestermalam/SQL-Sales-Analysis"
-   target="_blank"
-   rel="noopener noreferrer">
-   View SQL Project
-</a>
-
-</div>
-
-</article>
-
-<!-- ============================
-     PROJECT 3 POWER BI
-============================ -->
-
-<article class="project-card">
-
-<img
-  src="https://raw.githubusercontent.com/bestermalam/Power-BI-Business-Performance-Dashboard/main/Power_BI_Dashboard.png"
-  alt="Power BI Business Performance Dashboard"
-  loading="lazy">
-
-<div class="project-content">
-
-<span class="tag">Power BI</span>
-<span class="tag">DAX</span>
-<span class="tag">Business Intelligence</span>
-
-<h3>
-  Power BI Business Performance Dashboard
-</h3>
-
-<p>
-  Developed an interactive Power BI dashboard
-  to monitor business sales revenue, product
-  performance, quantities sold and city-level
-  business results.
-</p>
-
-<h4>Project Objectives</h4>
-
-<ul class="insights">
-  <li>Develop interactive KPI cards.</li>
-  <li>Calculate revenue using DAX.</li>
-  <li>Compare sales by product.</li>
-  <li>Analyze sales by city.</li>
-  <li>Apply interactive slicers.</li>
-</ul>
-
-<div class="metrics">
-
-<div class="metric">
-  <strong>K22,150</strong>
-  <small>Total Revenue</small>
-</div>
-
-<div class="metric">
-  <strong>16</strong>
-  <small>Units Sold</small>
-</div>
-
-<div class="metric">
-  <strong>5</strong>
-  <small>Unique Products</small>
-</div>
-
-<div class="metric">
-  <strong>K11,400</strong>
-  <small>Lusaka Revenue</small>
-</div>
-
-</div>
-
-<h4>Tools and Methods</h4>
-
-<ul class="insights">
-  <li>Power BI Desktop</li>
-  <li>DAX Calculations</li>
-  <li>Data Modeling</li>
-  <li>Interactive Charts</li>
-  <li>Product and City Slicers</li>
-</ul>
-
-<h4>Business Findings</h4>
-
-<ul class="insights">
-  <li>Monitors generated K8,800 in revenue.</li>
-  <li>Lusaka led city revenue at K11,400.</li>
-  <li>Five unique products generated K22,150.</li>
-</ul>
-
-<a class="btn"
-   href="https://github.com/bestermalam/Power-BI-Business-Performance-Dashboard"
-   target="_blank"
-   rel="noopener noreferrer">
-   View Power BI Project
-</a>
-
-</div>
-
-</article>
-
-<!-- ============================
-     PROJECT 4 PYTHON
-============================ -->
-
-<article class="project-card">
-
-<img
-  src="https://raw.githubusercontent.com/bestermalam/Python-Sales-Data-Analysis/main/Sales_by_Category.png"
-  alt="Python Sales by Category Analysis"
-  loading="lazy">
-
-<div class="project-content">
-
-<span class="tag">Python</span>
-<span class="tag">Pandas</span>
-<span class="tag">Matplotlib</span>
-
-<h3>
-  Python Sales Data Analysis
-</h3>
-
-<p>
-  Used Python, Pandas and Matplotlib
-  in Google Colab to clean, explore
-  and visualize sales data containing
-  20 valid transactions from September 2026.
-</p>
-
-<h4>Project Objectives</h4>
-
-<ul class="insights">
-  <li>Import and clean sales datasets.</li>
-  <li>Identify blank and invalid records.</li>
-  <li>Calculate business KPIs.</li>
-  <li>Analyze product and category performance.</li>
-  <li>Create business charts and insights.</li>
-</ul>
-
-<div class="metrics">
-
-<div class="metric">
-  <strong>K120,560</strong>
-  <small>Total Revenue</small>
-</div>
-
-<div class="metric">
-  <strong>20</strong>
-  <small>Total Orders</small>
-</div>
-
-<div class="metric">
-  <strong>K87,700</strong>
-  <small>Electronics Revenue</small>
-</div>
-
-<div class="metric">
-  <strong>K47,200</strong>
-  <small>John's Sales Revenue</small>
-</div>
-
-</div>
-
-<h4>Tools and Methods</h4>
-
-<ul class="insights">
-  <li>Python</li>
-  <li>Pandas</li>
-  <li>Matplotlib</li>
-  <li>Google Colab</li>
-  <li>CSV and Excel Datasets</li>
-</ul>
-
-<h4>Key Findings</h4>
-
-<ul class="insights">
-  <li>Electronics generated K87,700.</li>
-  <li>Furniture generated K17,400.</li>
-  <li>Accessories generated K15,460.</li>
-  <li>John generated K47,200 in sales.</li>
-  <li>Tablets generated K22,500 in revenue.</li>
-</ul>
-
-<a class="btn"
-   href="https://github.com/bestermalam/Python-Sales-Data-Analysis"
-   target="_blank"
-   rel="noopener noreferrer">
-   View Python Project
-</a>
+  <h2 class="section-title">
+    Featured Projects
+  </h2>
+
+  <p class="section-subtitle">
+    Four practical data analysis projects using
+    Microsoft Excel, SQL, Power BI and Python.
+  </p>
+
+  <div class="projects-grid">
+
+    <!-- EXCEL PROJECT -->
+
+    <article class="project-card">
+
+      <img
+        src="https://raw.githubusercontent.com/bestermalam/Excel-Sales-Performance-Dashboard/main/Sales_Dashboard/Sales_Dashboard_Performances.png"
+        alt="Excel Sales Performance Dashboard"
+        loading="lazy">
+
+      <div class="project-content">
+
+        <span class="tag">Excel</span>
+        <span class="tag">PivotTables</span>
+        <span class="tag">Dashboard</span>
+
+        <h3>Excel Sales Performance Dashboard</h3>
+
+        <p>
+          Developed an interactive Excel dashboard
+          to analyze sales revenue, transactions,
+          product performance and salesperson
+          contributions.
+        </p>
+
+        <h4>Project Objectives</h4>
+
+        <ul class="insights">
+          <li>Calculate total business revenue.</li>
+          <li>Identify top-performing products.</li>
+          <li>Compare sales across cities.</li>
+          <li>Analyze salesperson performance.</li>
+          <li>Build an interactive dashboard.</li>
+        </ul>
+
+        <div class="metrics">
+
+          <div class="metric">
+            <strong>K120,560</strong>
+            <small>Total Revenue</small>
+          </div>
+
+          <div class="metric">
+            <strong>20</strong>
+            <small>Transactions</small>
+          </div>
+
+          <div class="metric">
+            <strong>86</strong>
+            <small>Units Sold</small>
+          </div>
+
+          <div class="metric">
+            <strong>K6,028</strong>
+            <small>Average Sale</small>
+          </div>
+
+        </div>
+
+        <h4>Tools and Methods</h4>
+
+        <ul class="insights">
+          <li>Microsoft Excel</li>
+          <li>SUM, AVERAGE, COUNT and COUNTA</li>
+          <li>PivotTables and PivotCharts</li>
+          <li>Sorting and Filtering</li>
+          <li>Interactive Slicers</li>
+          <li>KPI Reporting</li>
+        </ul>
+
+        <a class="btn"
+           href="https://github.com/bestermalam/Excel-Sales-Performance-Dashboard"
+           target="_blank"
+           rel="noopener noreferrer">
+          View Excel Project
+        </a>
+
+      </div>
+    </article>
+
+    <!-- SQL PROJECT -->
+
+    <article class="project-card">
+
+      <div class="sql-preview">
+        <strong>SQL Analysis</strong>
+        <code>
+          SELECT product, SUM(revenue)
+          <br>
+          FROM sales
+          <br>
+          GROUP BY product;
+        </code>
+      </div>
+
+      <div class="project-content">
+
+        <span class="tag">SQL</span>
+        <span class="tag">MySQL</span>
+        <span class="tag">Data Analysis</span>
+
+        <h3>SQL Sales Data Analysis</h3>
+
+        <p>
+          Analyzed fictional Zambian retail
+          sales data using MySQL to investigate
+          revenue, product performance,
+          customer purchases and sales
+          across cities.
+        </p>
+
+        <h4>Project Objectives</h4>
+
+        <ul class="insights">
+          <li>Calculate business revenue using SQL.</li>
+          <li>Identify top-selling products.</li>
+          <li>Compare revenue across cities.</li>
+          <li>Find highest-spending customers.</li>
+          <li>Calculate average transaction value.</li>
+        </ul>
+
+        <div class="metrics">
+
+          <div class="metric">
+            <strong>K65,700</strong>
+            <small>Total Revenue</small>
+          </div>
+
+          <div class="metric">
+            <strong>10</strong>
+            <small>Transactions</small>
+          </div>
+
+          <div class="metric">
+            <strong>K25,500</strong>
+            <small>Laptop Revenue</small>
+          </div>
+
+          <div class="metric">
+            <strong>K30,300</strong>
+            <small>Lusaka Revenue</small>
+          </div>
+
+        </div>
+
+        <h4>SQL Techniques</h4>
+
+        <ul class="insights">
+          <li>SELECT and WHERE</li>
+          <li>ORDER BY and GROUP BY</li>
+          <li>HAVING and INNER JOIN</li>
+          <li>SUM, COUNT, AVG, MIN and MAX</li>
+          <li>Subqueries</li>
+        </ul>
+
+        <h4>Business Findings</h4>
+
+        <ul class="insights">
+          <li>Laptop generated the highest revenue.</li>
+          <li>Lusaka was the highest-revenue city.</li>
+          <li>John Banda was the top-spending customer.</li>
+        </ul>
+
+        <a class="btn"
+           href="https://github.com/bestermalam/SQL-Sales-Analysis"
+           target="_blank"
+           rel="noopener noreferrer">
+          View SQL Project
+        </a>
+
+      </div>
+    </article>
+
+    <!-- POWER BI PROJECT -->
+
+    <article class="project-card">
+
+      <img
+        src="https://raw.githubusercontent.com/bestermalam/Power-BI-Business-Performance-Dashboard/main/Power_BI_Dashboard.png"
+        alt="Power BI Business Performance Dashboard"
+        loading="lazy">
+
+      <div class="project-content">
+
+        <span class="tag">Power BI</span>
+        <span class="tag">DAX</span>
+        <span class="tag">Business Intelligence</span>
+
+        <h3>
+          Power BI Business Performance Dashboard
+        </h3>
+
+        <p>
+          Developed an interactive Power BI
+          dashboard to monitor sales revenue,
+          product performance, quantities sold
+          and city-level business results.
+        </p>
+
+        <h4>Project Objectives</h4>
+
+        <ul class="insights">
+          <li>Develop interactive KPI cards.</li>
+          <li>Calculate revenue using DAX.</li>
+          <li>Compare sales by product.</li>
+          <li>Analyze sales by city.</li>
+          <li>Apply interactive slicers.</li>
+        </ul>
+
+        <div class="metrics">
+
+          <div class="metric">
+            <strong>K22,150</strong>
+            <small>Total Revenue</small>
+          </div>
+
+          <div class="metric">
+            <strong>16</strong>
+            <small>Units Sold</small>
+          </div>
+
+          <div class="metric">
+            <strong>5</strong>
+            <small>Unique Products</small>
+          </div>
+
+          <div class="metric">
+            <strong>K11,400</strong>
+            <small>Lusaka Revenue</small>
+          </div>
+
+        </div>
+
+        <h4>Tools and Methods</h4>
+
+        <ul class="insights">
+          <li>Power BI Desktop</li>
+          <li>DAX Calculations</li>
+          <li>Data Modeling</li>
+          <li>Interactive Charts</li>
+          <li>Product and City Slicers</li>
+        </ul>
+
+        <h4>Business Findings</h4>
+
+        <ul class="insights">
+          <li>Monitors generated K8,800 in revenue.</li>
+          <li>Lusaka led city revenue at K11,400.</li>
+          <li>Five unique products generated K22,150.</li>
+        </ul>
+
+        <a class="btn"
+           href="https://github.com/bestermalam/Power-BI-Business-Performance-Dashboard"
+           target="_blank"
+           rel="noopener noreferrer">
+          View Power BI Project
+        </a>
+
+      </div>
+    </article>
+
+    <!-- PYTHON PROJECT -->
+
+    <article class="project-card">
+
+      <img
+        src="https://raw.githubusercontent.com/bestermalam/Python-Sales-Data-Analysis/main/Sales_by_Category.png"
+        alt="Python Sales by Category Analysis"
+        loading="lazy">
+
+      <div class="project-content">
+
+        <span class="tag">Python</span>
+        <span class="tag">Pandas</span>
+        <span class="tag">Matplotlib</span>
+
+        <h3>Python Sales Data Analysis</h3>
+
+        <p>
+          Used Python, Pandas and Matplotlib
+          in Google Colab to clean, explore
+          and visualize sales data containing
+          20 valid transactions from
+          September 2026.
+        </p>
+
+        <h4>Project Objectives</h4>
+
+        <ul class="insights">
+          <li>Import and clean sales datasets.</li>
+          <li>Identify blank and invalid records.</li>
+          <li>Calculate business KPIs.</li>
+          <li>Analyze product and category performance.</li>
+          <li>Create business charts and insights.</li>
+        </ul>
+
+        <div class="metrics">
+
+          <div class="metric">
+            <strong>K120,560</strong>
+            <small>Total Revenue</small>
+          </div>
+
+          <div class="metric">
+            <strong>20</strong>
+            <small>Total Orders</small>
+          </div>
+
+          <div class="metric">
+            <strong>K87,700</strong>
+            <small>Electronics Revenue</small>
+          </div>
+
+          <div class="metric">
+            <strong>K47,200</strong>
+            <small>John's Sales Revenue</small>
+          </div>
+
+        </div>
+
+        <h4>Tools and Methods</h4>
+
+        <ul class="insights">
+          <li>Python</li>
+          <li>Pandas</li>
+          <li>Matplotlib</li>
+          <li>Google Colab</li>
+          <li>CSV and Excel Datasets</li>
+        </ul>
+
+        <h4>Key Findings</h4>
+
+        <ul class="insights">
+          <li>Electronics generated K87,700.</li>
+          <li>Furniture generated K17,400.</li>
+          <li>Accessories generated K15,460.</li>
+          <li>John generated K47,200 in sales.</li>
+          <li>Tablets generated K22,500 in revenue.</li>
+        </ul>
+
+        <a class="btn"
+           href="https://github.com/bestermalam/Python-Sales-Data-Analysis"
+           target="_blank"
+           rel="noopener noreferrer">
+          View Python Project
+        </a>
+
+      </div>
+    </article>
+
+  </div>
 
 </div>
-
-</article>
-
-</div>
-
-</div>
-
 </section>
 
-<!-- ============================
-     CV DOWNLOAD SECTION
-============================ -->
+<!-- ===== CV DOWNLOAD SECTION ===== -->
 
 <section class="cv-section" id="cv">
-
 <div class="container">
 
-<h2 class="section-title">
-  My Curriculum Vitae
-</h2>
+  <h2 class="section-title">
+    My Curriculum Vitae
+  </h2>
 
-<p class="section-subtitle"
-   style="margin-left:auto;margin-right:auto;">
+  <p class="section-subtitle"
+     style="margin-left:auto;margin-right:auto;">
 
-  Download my CV to learn more about my
-  education, technical skills, data analytics
-  projects and professional interests.
+    Download my CV to learn more about my
+    education, technical skills, data analytics
+    projects and professional interests.
 
-</p>
+  </p>
 
-<div class="cv-box">
+  <div class="cv-box">
 
-<h3>Bester Malama</h3>
+    <h3>Bester Malama</h3>
 
-<p>
-  Data & Technology Intern |
-  Aspiring Data Analyst
-</p>
+    <p>
+      Data & Technology Intern |
+      Aspiring Data Analyst
+    </p>
 
-<p>
-  Information Systems |
-  Excel | SQL | Power BI | Python
-</p>
+    <p>
+      Information Systems |
+      Excel | SQL | Power BI | Python
+    </p>
 
-<div class="buttons">
+    <div class="buttons">
 
-  <a class="btn"
-     href="Bester_Malama_CV.pdf"
-     download="Bester_Malama_CV.pdf">
-     Download My CV (PDF)
-  </a>
+      <!-- CORRECTED DOWNLOAD LINK -->
+      <a class="btn"
+         href="Bester_Malama_CV%20.pdf"
+         download="Bester_Malama_CV.pdf">
+        Download My CV (PDF)
+      </a>
 
-  <a class="btn"
-     href="Bester_Malama_CV.pdf"
-     target="_blank"
-     rel="noopener noreferrer">
-     View My CV
-  </a>
+      <!-- CORRECTED VIEW LINK -->
+      <a class="btn"
+         href="Bester_Malama_CV%20.pdf"
+         target="_blank"
+         rel="noopener noreferrer">
+        View My CV
+      </a>
+
+    </div>
+
+  </div>
 
 </div>
-
-</div>
-
-</div>
-
 </section>
 
-<!-- ============================
-     CONTACT
-============================ -->
+<!-- ===== CONTACT SECTION ===== -->
 
 <section class="contact" id="contact">
-
 <div class="container">
 
-<h2 class="section-title">
-  Contact Me
-</h2>
+  <h2 class="section-title">
+    Contact Me
+  </h2>
 
-<p>
-  I am interested in Data Analyst internships,
-  Data Mining, Business Intelligence,
-  Data Reporting and IT opportunities.
-</p>
+  <p>
+    I am interested in Data Analyst internships,
+    Data Mining, Business Intelligence,
+    Data Reporting and IT opportunities.
+  </p>
 
-<p>
-  Feel free to contact me regarding internships,
-  projects, collaborations and
-  professional opportunities.
-</p>
+  <p>
+    Feel free to contact me regarding
+    internships, projects, collaborations
+    and professional opportunities.
+  </p>
 
-<div class="contact-details">
+  <div class="contact-details">
 
-<div class="contact-item">
+    <div class="contact-item">
+      <h3>Email Address</h3>
+      <a href="mailto:bestermalama228@gmail.com">
+        bestermalama228@gmail.com
+      </a>
+    </div>
 
-<h3>Email Address</h3>
+    <div class="contact-item">
+      <h3>Phone Number</h3>
+      <a href="tel:+260972269308">
+        +260 972 269 308
+      </a>
+    </div>
 
-<a href="mailto:bestermalama228@gmail.com">
-  bestermalama228@gmail.com
-</a>
+    <div class="contact-item">
+      <h3>GitHub Profile</h3>
+      <a href="https://github.com/bestermalam"
+         target="_blank"
+         rel="noopener noreferrer">
+        github.com/bestermalam
+      </a>
+    </div>
 
-</div>
+    <div class="contact-item">
+      <h3>Location</h3>
+      <p>Lusaka, Zambia</p>
+    </div>
 
-<div class="contact-item">
+  </div>
 
-<h3>Phone Number</h3>
+  <div class="buttons">
 
-<a href="tel:+260972269308">
-  +260 972 269 308
-</a>
+    <a class="btn"
+       href="mailto:bestermalama228@gmail.com?subject=Career%20Opportunity">
+      Hire Me
+    </a>
 
-</div>
+    <a class="btn btn-outline"
+       href="mailto:bestermalama228@gmail.com">
+      Send Me an Email
+    </a>
 
-<div class="contact-item">
+    <a class="btn btn-outline"
+       href="tel:+260972269308">
+      Call Me
+    </a>
 
-<h3>GitHub Profile</h3>
+    <a class="btn btn-outline"
+       href="https://github.com/bestermalam"
+       target="_blank"
+       rel="noopener noreferrer">
+      View My GitHub
+    </a>
 
-<a href="https://github.com/bestermalam"
-   target="_blank"
-   rel="noopener noreferrer">
-  github.com/bestermalam
-</a>
-
-</div>
-
-<div class="contact-item">
-
-<h3>Location</h3>
-
-<p>Lusaka, Zambia</p>
-
-</div>
-
-</div>
-
-<div class="buttons">
-
-<a class="btn"
-   href="mailto:bestermalama228@gmail.com?subject=Career%20Opportunity">
-   Hire Me
-</a>
-
-<a class="btn btn-outline"
-   href="mailto:bestermalama228@gmail.com">
-   Send Me an Email
-</a>
-
-<a class="btn btn-outline"
-   href="tel:+260972269308">
-   Call Me
-</a>
-
-<a class="btn btn-outline"
-   href="https://github.com/bestermalam"
-   target="_blank"
-   rel="noopener noreferrer">
-   View My GitHub
-</a>
+  </div>
 
 </div>
-
-</div>
-
 </section>
 
 </main>
 
-<!-- ============================
-     FOOTER
-============================ -->
+<!-- ===== FOOTER ===== -->
 
 <footer>
 
-<p>
-  &copy; 2026 Bester Malama.
-  All Rights Reserved.
-</p>
+  <p>
+    &copy; 2026 Bester Malama.
+    All Rights Reserved.
+  </p>
 
-<p>
-  Data Analyst Portfolio |
-  Excel | SQL | Power BI | Python
-</p>
+  <p>
+    Data Analyst Portfolio |
+    Excel | SQL | Power BI | Python
+  </p>
 
-<p>
-  Email:
-  <a href="mailto:bestermalama228@gmail.com">
-    bestermalama228@gmail.com
-  </a>
-</p>
+  <p>
+    Email:
+    <a href="mailto:bestermalama228@gmail.com">
+      bestermalama228@gmail.com
+    </a>
+  </p>
 
-<p>
-  Phone:
-  <a href="tel:+260972269308">
-    +260 972 269 308
-  </a>
-</p>
+  <p>
+    Phone:
+    <a href="tel:+260972269308">
+      +260 972 269 308
+    </a>
+  </p>
 
-<p>
-  Built with HTML and CSS |
-  Hosted on GitHub Pages
-</p>
+  <p>
+    Built with HTML and CSS |
+    Hosted on GitHub Pages
+  </p>
 
 </footer>
 
